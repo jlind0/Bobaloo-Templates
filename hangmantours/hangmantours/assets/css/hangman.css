@@ -1,0 +1,240 @@
+.tours-heading{
+    color: white;
+}
+.tours {
+  display: flex;
+  gap: 1rem; /* optional spacing between tours */
+  flex-wrap: wrap;
+}
+.about-top {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* so it stays responsive */
+}
+footer.gh-foot {
+    background-color: black;
+    color: white;
+}
+
+footer.gh-foot a {
+    color: white;
+}
+
+footer.gh-foot a:hover {
+    color: maroon; /* subtle hover color */
+}
+.gh-foot-inner,
+.gh-foot-menu,
+.footer-socials,
+.gh-copyright {
+    color: white;
+}
+
+.gh-foot-menu a,
+.footer-socials a {
+    color: white;
+}
+
+.gh-foot-menu a:hover,
+.footer-socials a:hover {
+    color: maroon;
+}
+.footer-menu{
+    justify-content: center;
+    display: flex;
+    gap:5rem;
+    flex-wrap: wrap;
+}
+.footer-block {
+  flex: 1 1 200px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 300px */
+  min-width: 200px;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+}
+.footer-block h1 {
+  color:maroon
+}
+.footer-block h2 a{
+    color: white;
+    text-decoration-color: white;
+    text-decoration: underline;
+}
+.footer-block h2 a:hover{
+    color: maroon;
+    text-decoration-color: maroon;
+}
+.footer-socials{
+    font-size: larger;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.footer-socials .social{
+ color: white;
+ font-size: x-large;
+}
+.footer-socials .social a{
+ color: white;
+ text-decoration: none;
+}
+.footer-socials .social a:hover{
+ color: maroon;
+ text-decoration: none;
+}
+.about-socials{
+    font-size: larger;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.about-socials .social{
+ color: black;
+ font-size: x-large;
+}
+.about-socials .social a{
+ color: black;
+ text-decoration: none;
+}
+.about-socials .social a:hover{
+ color: maroon;
+ text-decoration: none;
+}
+.about-top-left {
+  flex: 1;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.about-top-right {
+  flex: 1;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+.about-top-right h1{
+    color: white;
+    padding: 1em;
+}
+.tour {
+  flex: 1 1 300px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 300px */
+  min-width: 300px;
+  border: 3px solid black;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.tour-inner h2 {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;  /* optional, for breathing room */
+}
+.tour-content{
+    background-color: white;
+}
+.tour-content h1,
+.tour-content h2 {
+ background-color: white;
+  color: maroon;
+}
+
+.tour-content a{
+   display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: maroon; /* Bootstrap blue style */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+.tour-content a:hover{
+    background-color: black;
+}
+
+.tour-buttons {
+  display: flex;
+  gap: 1rem; /* optional spacing between tours */
+  flex-wrap: wrap;
+  
+}
+.tour-button {
+  flex: 1 1 150px;
+  min-width: 150px;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: maroon; /* Bootstrap blue style */
+}
+
+
+.tour-button-content a{
+   display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+.tour-button-content a:hover{
+    background-color: lightcoral;
+}
+
+.indemnification{
+    background-color: lightgray;
+    color: black;
+}
+.indemnification h1{
+    font-size: medium;
+    font-weight: bold;
+}
+.as-seen{
+    background-color: black;
+    display: flex;
+    gap:0;
+    flex-wrap: wrap;
+}
+.as-seen-left{
+    flex:1;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.as-seen-left h1{
+    color: white;
+}
+.as-seen-left-items{
+    flex-direction: row;
+}
+.as-seen-right{
+    flex: 1;
+}
+.as-seen-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.as-seen-button {
+  flex: 1 1 300px;
+  width: 300px;
+  padding: 3rem;
+  margin: 3rem;
+  box-sizing: border-box;
+  background-color: maroon; /* Bootstrap blue style */
+}
+.as-seen-button-content a{
+   display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+.as-seen-button-content a:hover{
+    background-color: lightcoral;
+}

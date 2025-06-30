@@ -1,0 +1,59 @@
+{{!< default}}
+
+{{#post}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <article class="gh-article {{post_class}}">
+            {{#match @page.show_title_and_feature_image}}
+                <header class="gh-article-header gh-canvas">
+                    {{> "feature-image"}}
+                </header>
+            {{/match}}
+
+            <section class="gh-content">
+                <div class="about-top">
+                    <div class="about-top-left">
+                        <p>{{{@custom.about_text_left}}}</p>
+                    </div>
+                    <div class="about-top-right">
+                        <h1>{{{@custom.about_text_right_heading}}}</h1>
+                        <p>{{{@custom.about_text_right}}}</p>
+                    </div>
+                </div>
+                <div class="as-seen">
+                    <div class="as-seen-left">
+                        <h1>{{{@custom.about_text_as_seen_left_heading}}}</h1>
+                        <div class="as-seen-left-items">
+                             {{#get "posts" filter="tag:as-seen-on"}}
+                                {{#foreach posts}}
+                                    {{> as-seen-on this}}
+                                {{/foreach}}
+                            {{/get}}
+                        </div>
+                    </div>
+                    <div class="as-seen-right">
+                        {{#if @custom.about_as_seen_image}}
+                            <img src="{{@custom.about_as_seen_image}}"/>
+                        {{/if}}
+                    </div>
+                </div>
+                <center>
+                    <div class="about-social-media">
+                        <h1>{{{@custom.about_social_heading}}}</h1>
+                    </div>
+                    <div class="about-socials">
+                        {{#get "posts" filter="tag:social"}}
+                            {{#foreach posts}}
+                                {{> social this}}
+                            {{/foreach}}
+                        {{/get}}
+                    </div>
+                </center>
+                
+            </section>
+        </article>
+    </div>
+</main>
+
+{{/post}}
