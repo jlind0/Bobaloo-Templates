@@ -1,3 +1,85 @@
+/* === HEADER STRIP ============================================== */
+.upper-head{
+  background:#fff;
+  /* Put the three sections on one row */
+  display:flex;
+  align-items:center;          /* vertical-centering of everything */
+  width:100vw;
+  height: 13vh;
+}
+
+/* shared settings */
+.upper-head-left,
+.upper-head-center,
+.upper-head-right{
+  display:flex;
+  align-items:center;
+}
+.upper-head-right{        /* keep whatever width you prefer            */
+  display:flex;
+  justify-content:flex-end;
+  margin-left:auto;      /*  ➜ pushes this column to the far right    */
+}
+/* left column – 40 % width, content hugs the left edge */
+.upper-head-left{
+  flex:0 0 40%;
+  justify-content:flex-start;  /* ⬅ */
+}
+
+/* logo column – 5 % width, centred */
+.upper-head-center{
+  flex:0 0 5%;
+  justify-content:center;      /* ⇵ */
+}
+.upper-head-center img{
+  max-height:12vh;              /* image never higher than 5 % of viewport */
+  width:auto;
+}
+
+
+/* make sure what follows starts beneath the header
+   (only needed if you later make .upper-head position:fixed)          */
+.gh-site{
+  clear:both;   /* safe-guard in case other floats remain elsewhere   */
+  /* If you make .upper-head fixed, uncomment the next line
+  margin-top:5vh;  */
+}
+
+/* keep your existing “item” rules */
+.upper-head-left-item,
+.upper-head-right-item{
+  flex:1;
+  border-radius:3px;
+  border-color:#000;
+  padding:1em;
+}
+
+.upper-head a{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+  background-color: maroon;
+}
+.gh-site{
+  clear:both;   /* safe-guard in case other floats remain elsewhere   */
+  /* If you make .upper-head fixed, uncomment the next line
+  margin-top:5vh;  */
+}
+
+/* keep your existing “item” rules */
+.upper-head-left-item,
+.upper-head-right-item{
+  flex:1;
+  border-radius:3px;
+  border-color:#000;
+  padding:1em;
+}
+footer.gh-foot a:hover {
+    background-color: black;
+}
 .tours-heading{
     color: white;
 }

@@ -1,0 +1,27 @@
+{{!< default}}
+
+{{#post}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <article class="gh-article {{post_class}}">
+            {{#match @page.show_title_and_feature_image}}
+                <header class="gh-article-header gh-canvas">
+                    {{> "feature-image"}}
+                </header>
+            {{/match}}
+
+            <section class="gh-content">
+                <div class="tours">
+                    {{#get "posts" filter="tag:tour"}}
+                        {{#foreach posts}}
+                            {{> tour this}}
+                        {{/foreach}}
+                    {{/get}}
+                </div>
+            </section>
+        </article>
+    </div>
+</main>
+
+{{/post}}
